@@ -26,4 +26,17 @@ while (true)
             Console.WriteLine("Den varan finns inte.");
         }
     }
-
+    else
+    {
+        Console.Write("pris: ");
+        if (int.TryParse(Console.ReadLine(), out int pris))
+        {
+            names.Add(input ?? "");
+            prices.Add(pris);
+        }
+        else
+        {
+            Console.WriteLine("Ogiltigt pris.");
+        }
+    }
+}
