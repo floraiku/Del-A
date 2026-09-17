@@ -5,10 +5,10 @@ while (true)
     int total = 0;
     for (int i = 0; i < names.Count; i++)
     {
-        Console.WriteLine($"{i + 1}.{names[i]} - { [prices]} kr"); total += prices[i];
+        Console.WriteLine($"{i + 1}.{names[i]} - {prices[i]} kr"); total += prices[i];
 
     }
-    Console.WriteLine($"Totalt: {totalt} kr");
+    Console.WriteLine($"Totalt: {total} kr");
 
     Console.Write("Vara eller nummer:");
     string? input = Console.ReadLine();
