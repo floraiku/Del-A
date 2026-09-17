@@ -8,3 +8,7 @@ for (int i = 0; i < names.Count; i++)
     Console.WriteLine($"{i + 1}.{names[i]} - { [prices]} kr"); total += prices[i];
 
 }
+Console.WriteLine($"Totalt: {totalt} kr");
+
+Console.Write("Vara eller nummer:");
+string? input = Console.ReadLine();
